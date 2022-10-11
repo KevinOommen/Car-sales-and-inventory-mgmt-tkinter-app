@@ -1,0 +1,8 @@
+import os
+import time
+
+
+def printer(invno):
+    os.startfile("temp.pdf", "print")
+except Exception as a:
+	print(a)

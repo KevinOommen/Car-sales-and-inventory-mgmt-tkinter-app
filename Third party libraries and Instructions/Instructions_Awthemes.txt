@@ -1,0 +1,36 @@
+Install TkSvg. Just copy tksvg folder (with dll and tcl file) into tcl folder
+
+Copy awthemes folder into Lib\site-packages\ttkthemes\themes
+
+Patch Lib\site-packages\ttkthemes\themes\pkgIndex.tcl. Insert the following lines into the base_themes array:
+
+awdark 7.2
+awblack 7.0
+awlight 7.1
+awwinxpblue 7.1
+Result:
+
+array set base_themes {
+  aquativo 0.0.1
+  black 0.1
+  blue 0.7
+  clearlooks 0.1
+  elegance 0.1
+  itft1 0.14
+  keramik 0.6.2
+  kroc 0.0.1
+  plastik 0.6.2
+  radiance 0.1
+  smog 0.1.1
+  winxpblue 0.6
+  awdark 7.2
+  awblack 7.0
+  awlight 7.1
+  awwinxpblue 7.1
+}
+Create hard links to the awthemes directory. Otherwise ttkthemes will not find the themes:
+
+mklink /J "awlight" "awthemes"
+mklink /J "awdark" "awthemes"
+mklink /J "awblack" "awthemes"
+mklink /J "awwinxpblue" "awthemes"

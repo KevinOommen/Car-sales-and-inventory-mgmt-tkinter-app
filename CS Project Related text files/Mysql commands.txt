@@ -1,0 +1,74 @@
+CREATE TABLE VEHICLES(BRAND varchar(13) not null,					
+MODEL varchar(12) not null,
+YEARB int(4) not null,
+VAR varchar(16) not null,
+YEARP int(4) not null,
+STATE varchar(17) not null,
+PRICE bigint(8) not null,
+COLOR varchar(20),
+PLATE varchar(12) primary key,
+TRIP int(7) not null,
+RESVAL int(7),
+NAME varchar(25) not null,
+PHONE int(10) not null,
+EMAIL varchar(35) not null,
+ADDR varchar(80) not null,
+AVAIL varchar(8) not null);
+
+desc vehicles;
++--------+-------------+------+-----+---------+-------+
+| Field  | Type        | Null | Key | Default | Extra |
++--------+-------------+------+-----+---------+-------+
+| BRAND  | varchar(13) | NO   |     | NULL    |       |
+| MODEL  | varchar(12) | NO   |     | NULL    |       |
+| YEARB  | int(4)      | NO   |     | NULL    |       |
+| VAR    | varchar(16) | NO   |     | NULL    |       |
+| YEARP  | int(4)      | NO   |     | NULL    |       |
+| STATE  | varchar(17) | NO   |     | NULL    |       |
+| PRICE  | int(8)      | NO   |     | NULL    |       |
+| COLOR  | varchar(20) | NO   |     | NULL    |       |
+| PLATE  | varchar(12) | NO   | PRI | NULL    |       |
+| TRIP   | int(7)      | NO   |     | NULL    |       |
+| RESVAL | int(7)      | YES  |     | NULL    |       |
+| NAME   | varchar(25) | NO   |     | NULL    |       |
+| PHONE  | int(10)     | NO   |     | NULL    |       |
+| EMAIL  | varchar(35) | NO   |     | NULL    |       |
+| ADDR   | varchar(80) | NO   |     | NULL    |       |
+| AVAIL  | varchar(8)  | NO   |     | NULL    |       |
++--------+-------------+------+-----+---------+-------+
+
+CREATE TABLE CUSTOMERS(NAME varchar(25),
+PHONE int(10) not null,
+EMAIL varchar(35) not null,
+ADDR varchar(80) not null,
+PUR_DATE DATE not null,
+PLATE varchar(12),
+RESVAL int(7),
+INVNO integer primary key AUTO_INCREMENT);
+
+
+desc customers;
+
++----------+-------------+------+-----+---------+----------------+
+| Field    | Type        | Null | Key | Default | Extra          |
++----------+-------------+------+-----+---------+----------------+
+| NAME     | varchar(25) | YES  |     | NULL    |                |
+| PHONE    | int(10)     | NO   |     | NULL    |                |
+| EMAIL    | varchar(35) | NO   |     | NULL    |                |
+| ADDR     | varchar(80) | NO   |     | NULL    |                |
+| PUR_DATE | date        | NO   |     | NULL    |                |
+| PLATE    | varchar(12) | YES  |     | NULL    |                |
+| RESVAL   | int(7)      | YES  |     | NULL    |                |
+| INVNO    | int(11)     | NO   | PRI | NULL    | auto_increment |
++----------+-------------+------+-----+---------+----------------+
+
+
+
+
+
+
+
+
+
+
+

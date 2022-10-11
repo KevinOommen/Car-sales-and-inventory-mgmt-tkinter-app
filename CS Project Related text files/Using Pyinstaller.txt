@@ -1,0 +1,15 @@
+Steps(ensure u have pip installed)
+1)pip install pyinstaller
+2)Copy & paste the file directory in which u have your python file
+			OR
+ 2)U can go to the file directory where u stored the file and click on the path
+   at the top of the windows explorer and clear everything and type cmd.
+  **Now u will get a command prompt with  the above mentioned directory open
+
+3)Then type:pyinstaller --onefile -w name_of the_main_program_file.py
+
+4)U will get 2 folders namely 'build' and 'dist'.
+  U can delete the folder build it is not necessary
+
+5)Open the folder 'dist' and you will see the main executable file.
+ 

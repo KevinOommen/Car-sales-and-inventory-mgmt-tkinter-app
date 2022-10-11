@@ -1,0 +1,16 @@
+  if name in name_chk:
+        for i in name_chk:
+            print(i)
+            if name==i:
+                
+                c.execute("SELECT PASSWORD FROM USERS WHERE USERNAME=%s"%(name))
+                pwd_chk=c.fetchall()
+                print(pwd_chk)
+                if pwd==pwd_chk:
+                    print("Login Successful")
+                    break
+                else:
+                    print("Username or password may be invalid")
+    else:
+        print("INVALID USERNAME")
+

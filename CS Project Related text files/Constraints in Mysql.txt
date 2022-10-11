@@ -1,0 +1,15 @@
+Constraints in MySql:-
+
+1)Unique:It ensures that no 2 rows 	
+	 have the same values on the
+	 specified column.
+
+2)Default:to set a default value to 	
+	  a column if no value is 		
+          inserted in this columns
+
+3)NOT NULL:Ensures tha a column does not have any null values
+
+4)CHECK:It limits values that can be inserted into a column of a table.
+
+Eg: Create table emp(ecode integer not null unique,ename varchar(20),grade char

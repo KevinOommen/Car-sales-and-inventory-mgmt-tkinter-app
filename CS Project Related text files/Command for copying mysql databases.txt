@@ -1,0 +1,16 @@
+mysqldump -u root -p projectdb >project_db.sql
+Copy paste this in command prompt(as administrator)
+1)C:\WINDOWS\system32>cd "C:\Program Files\MySQL\MySQL Server 5.7\bin"
+
+2)After the directory loacation is set(as mentioned in step 1)
+  The copy paste the following:-
+  mysqldump -u root -p projectdb >projectdb.sql
+
+
+1)copy projectdb.sql in D Drive or any drive
+2)Open MySQL
+3) Type 
+	source  D:\comp.sql
+
+Note: replace D: with Drive name if file copied in any other drive
+  
